@@ -39,4 +39,4 @@ CHECK (init_balance >= 0);
 
 ALTER TABLE transactions
 ADD CONSTRAINT chk_transactions_amount
-CHECK (tx_amount > 0);
+CHECK (tx_amount >= 0);

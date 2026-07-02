@@ -91,12 +91,12 @@ CREATE TABLE transactions (
 
 CREATE TABLE alerts (
 
-    alert_id                INTEGER PRIMARY KEY,
+    tx_id               BIGINT PRIMARY KEY,
 
-    tx_id                   BIGINT NOT NULL UNIQUE,
+    alert_id            INTEGER NOT NULL,
 
-    alert_type              VARCHAR(30) NOT NULL,
+    alert_type          VARCHAR(30) NOT NULL,
 
-    is_fraud                BOOLEAN NOT NULL
+    is_fraud            BOOLEAN NOT NULL
 
 );
